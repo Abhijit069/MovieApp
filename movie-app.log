@@ -1,0 +1,123 @@
+2023-04-27 11:36:46.547  INFO 2564 --- [main] c.m.JwtYoutubeApplicationTests           : Starting JwtYoutubeApplicationTests using Java 11.0.14 on DESKTOP-PE4NMIE with PID 2564 (started by 2063123 in C:\LoanManagementSystem\jwt-youtube-master)
+2023-04-27 11:36:46.555 DEBUG 2564 --- [main] c.m.JwtYoutubeApplicationTests           : Running with Spring Boot v2.4.5, Spring v5.3.6
+2023-04-27 11:36:46.558  INFO 2564 --- [main] c.m.JwtYoutubeApplicationTests           : No active profile set, falling back to default profiles: default
+2023-04-27 11:36:47.535  INFO 2564 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-04-27 11:36:47.639  INFO 2564 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 91 ms. Found 4 JPA repository interfaces.
+2023-04-27 11:36:48.215  INFO 2564 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@7d986d83' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-04-27 11:36:48.230  INFO 2564 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-04-27 11:36:48.488  INFO 2564 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-04-27 11:36:48.591  INFO 2564 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.30.Final
+2023-04-27 11:36:48.856  INFO 2564 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-04-27 11:36:49.326  INFO 2564 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-04-27 11:36:49.672  INFO 2564 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-04-27 11:36:49.708  INFO 2564 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2023-04-27 11:36:50.971  INFO 2564 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-04-27 11:36:50.988  INFO 2564 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-04-27 11:36:51.665  WARN 2564 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-04-27 11:36:52.122  INFO 2564 --- [main] c.m.service.CustomerService              : -----Adding roles into role database----
+2023-04-27 11:36:52.244  INFO 2564 --- [main] c.m.service.CustomerService              : Admin role has added..
+2023-04-27 11:36:52.248  INFO 2564 --- [main] c.m.service.CustomerService              : User role has added..
+2023-04-27 11:36:52.248  INFO 2564 --- [main] c.m.service.CustomerService              : Password has been encrypted....
+2023-04-27 11:36:52.405  INFO 2564 --- [main] c.m.service.CustomerService              : admin has been assigned Admin role.
+2023-04-27 11:36:52.791  INFO 2564 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:test'
+2023-04-27 11:36:53.206  INFO 2564 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@79735611, org.springframework.security.web.context.SecurityContextPersistenceFilter@4626f584, org.springframework.security.web.header.HeaderWriterFilter@2d97344c, org.springframework.web.filter.CorsFilter@758ac46, org.springframework.security.web.authentication.logout.LogoutFilter@52667676, com.moviebookingapp.configuration.JwtRequestFilter@4cbb11e4, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@64de9fa4, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6406b84d, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4d2f8ee7, org.springframework.security.web.session.SessionManagementFilter@1d45c4b7, org.springframework.security.web.access.ExceptionTranslationFilter@576a8b00, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@73483d4b]
+2023-04-27 11:36:53.500  INFO 2564 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2023-04-27 11:36:53.818  INFO 2564 --- [main] c.m.JwtYoutubeApplicationTests           : Started JwtYoutubeApplicationTests in 7.636 seconds (JVM running for 9.414)
+2023-04-27 11:36:54.009  INFO 2564 --- [main] o.s.t.c.s.DefaultTestContextBootstrapper : Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+2023-04-27 11:36:54.009  INFO 2564 --- [main] o.s.t.c.s.DefaultTestContextBootstrapper : Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@5f815f93, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@7a8e484b, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@643f8ebe, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@65013d71, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@30a99b85, org.springframework.test.context.support.DirtiesContextTestExecutionListener@386d41cb, org.springframework.test.context.transaction.TransactionalTestExecutionListener@20bf7206, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@4cb939d5, org.springframework.test.context.event.EventPublishingTestExecutionListener@30b0f674, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@62818ab0, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@39f5eba4, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@3c070ade, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@bb3487c, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@650997b0, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@7337f87e]
+2023-04-27 11:36:54.241  INFO 2564 --- [main] o.s.mock.web.MockServletContext          : Initializing Spring TestDispatcherServlet ''
+2023-04-27 11:36:54.242  INFO 2564 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2023-04-27 11:36:54.242  INFO 2564 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
+2023-04-27 11:36:54.265  WARN 2564 --- [main] o.s.web.util.UrlPathHelper               : Could not decode request string [] with encoding 'Encoding': falling back to platform default encoding; exception message: Encoding
+2023-04-27 11:36:54.268  WARN 2564 --- [main] o.s.web.util.UrlPathHelper               : Could not decode request string [/moviebooking/forgot/janedoe] with encoding 'Encoding': falling back to platform default encoding; exception message: Encoding
+2023-04-27 11:36:54.294  INFO 2564 --- [main] c.m.controller.CustomerController        : Forgot password initiated...
+2023-04-27 11:36:54.377  INFO 2564 --- [main] o.s.mock.web.MockServletContext          : Initializing Spring TestDispatcherServlet ''
+2023-04-27 11:36:54.378  INFO 2564 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2023-04-27 11:36:54.378  INFO 2564 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
+2023-04-27 11:36:54.465  INFO 2564 --- [main] o.s.mock.web.MockServletContext          : Initializing Spring TestDispatcherServlet ''
+2023-04-27 11:36:54.465  INFO 2564 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2023-04-27 11:36:54.466  INFO 2564 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+2023-04-27 11:36:54.467  INFO 2564 --- [main] c.m.controller.CustomerController        : deleteMovie triggered, validating movieName
+2023-04-27 11:36:54.489  INFO 2564 --- [main] o.s.mock.web.MockServletContext          : Initializing Spring TestDispatcherServlet ''
+2023-04-27 11:36:54.490  INFO 2564 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2023-04-27 11:36:54.490  INFO 2564 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
+2023-04-27 11:36:54.511  INFO 2564 --- [main] o.s.mock.web.MockServletContext          : Initializing Spring TestDispatcherServlet ''
+2023-04-27 11:36:54.511  INFO 2564 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2023-04-27 11:36:54.511  INFO 2564 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
+2023-04-27 11:36:54.535  INFO 2564 --- [main] o.s.mock.web.MockServletContext          : Initializing Spring TestDispatcherServlet ''
+2023-04-27 11:36:54.535  INFO 2564 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2023-04-27 11:36:54.535  INFO 2564 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
+2023-04-27 11:36:54.537  INFO 2564 --- [main] c.m.controller.CustomerController        : Forgot password initiated...
+2023-04-27 11:36:54.558  INFO 2564 --- [main] o.s.mock.web.MockServletContext          : Initializing Spring TestDispatcherServlet ''
+2023-04-27 11:36:54.558  INFO 2564 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2023-04-27 11:36:54.558  INFO 2564 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
+2023-04-27 11:36:54.558  INFO 2564 --- [main] c.m.controller.CustomerController        : Listing all the movies
+2023-04-27 11:36:54.580  INFO 2564 --- [main] o.s.mock.web.MockServletContext          : Initializing Spring TestDispatcherServlet ''
+2023-04-27 11:36:54.580  INFO 2564 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2023-04-27 11:36:54.581  INFO 2564 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
+2023-04-27 11:36:54.583  INFO 2564 --- [main] c.m.controller.CustomerController        : UpdateTicket triggered, validating details
+2023-04-27 11:36:54.605  INFO 2564 --- [main] o.s.mock.web.MockServletContext          : Initializing Spring TestDispatcherServlet ''
+2023-04-27 11:36:54.605  INFO 2564 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2023-04-27 11:36:54.605  INFO 2564 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
+2023-04-27 11:36:54.632  INFO 2564 --- [main] o.s.mock.web.MockServletContext          : Initializing Spring TestDispatcherServlet ''
+2023-04-27 11:36:54.632  INFO 2564 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2023-04-27 11:36:54.633  INFO 2564 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+2023-04-27 11:36:54.695  INFO 2564 --- [main] c.m.controller.CustomerController        : Saving Movie into Movie table
+2023-04-27 11:36:54.715  INFO 2564 --- [main] o.s.mock.web.MockServletContext          : Initializing Spring TestDispatcherServlet ''
+2023-04-27 11:36:54.715  INFO 2564 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2023-04-27 11:36:54.716  INFO 2564 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
+2023-04-27 11:36:54.718  WARN 2564 --- [main] o.s.web.util.UrlPathHelper               : Could not decode request string [] with encoding 'Encoding': falling back to platform default encoding; exception message: Encoding
+2023-04-27 11:36:54.718  WARN 2564 --- [main] o.s.web.util.UrlPathHelper               : Could not decode request string [/moviebooking/all] with encoding 'Encoding': falling back to platform default encoding; exception message: Encoding
+2023-04-27 11:36:54.719  INFO 2564 --- [main] c.m.controller.CustomerController        : Listing all the movies
+2023-04-27 11:36:54.744  INFO 2564 --- [main] o.s.mock.web.MockServletContext          : Initializing Spring TestDispatcherServlet ''
+2023-04-27 11:36:54.744  INFO 2564 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2023-04-27 11:36:54.744  INFO 2564 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
+2023-04-27 11:36:54.746  INFO 2564 --- [main] c.m.controller.CustomerController        : Searching movieNaame in database
+2023-04-27 11:36:54.768  INFO 2564 --- [main] o.s.mock.web.MockServletContext          : Initializing Spring TestDispatcherServlet ''
+2023-04-27 11:36:54.768  INFO 2564 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2023-04-27 11:36:54.769  INFO 2564 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+2023-04-27 11:36:54.772  INFO 2564 --- [main] c.m.controller.CustomerController        : Logging in User
+2023-04-27 11:36:54.805  INFO 2564 --- [main] o.s.mock.web.MockServletContext          : Initializing Spring TestDispatcherServlet ''
+2023-04-27 11:36:54.805  INFO 2564 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2023-04-27 11:36:54.807  INFO 2564 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+2023-04-27 11:36:54.832  INFO 2564 --- [main] c.m.controller.CustomerController        : Registering user...
+2023-04-27 11:36:54.855  INFO 2564 --- [main] o.s.mock.web.MockServletContext          : Initializing Spring TestDispatcherServlet ''
+2023-04-27 11:36:54.855  INFO 2564 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2023-04-27 11:36:54.855  INFO 2564 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
+2023-04-27 11:36:54.857  INFO 2564 --- [main] c.m.controller.CustomerController        : bookTicket method triggerred, validating moviename
+2023-04-27 11:36:54.867  INFO 2564 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2023-04-27 11:36:54.870  INFO 2564 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-04-27 11:36:54.875  INFO 2564 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-04-27 11:36:54.882  INFO 2564 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-04-27 14:02:16.847  INFO 2620 --- [main] c.moviebookingapp.JwtYoutubeApplication  : Starting JwtYoutubeApplication using Java 17.0.2 on LAPTOP-49GE95LS with PID 2620 (C:\Users\JIT\IdeaProjects\MovieApp\target\classes started by JIT in C:\Users\JIT\IdeaProjects\MovieApp)
+2023-04-27 14:02:16.850 DEBUG 2620 --- [main] c.moviebookingapp.JwtYoutubeApplication  : Running with Spring Boot v2.4.5, Spring v5.3.6
+2023-04-27 14:02:16.850  INFO 2620 --- [main] c.moviebookingapp.JwtYoutubeApplication  : No active profile set, falling back to default profiles: default
+2023-04-27 14:02:17.549  INFO 2620 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-04-27 14:02:17.620  INFO 2620 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 58 ms. Found 4 JPA repository interfaces.
+2023-04-27 14:02:17.910  INFO 2620 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@7a1f45ed' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-04-27 14:02:17.915  INFO 2620 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-04-27 14:02:18.281  INFO 2620 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-04-27 14:02:18.292  INFO 2620 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-04-27 14:02:18.293  INFO 2620 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.45]
+2023-04-27 14:02:18.370  INFO 2620 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-04-27 14:02:18.370  INFO 2620 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1473 ms
+2023-04-27 14:02:18.415  INFO 2620 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-04-27 14:02:18.575  INFO 2620 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-04-27 14:02:18.581  INFO 2620 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:test'
+2023-04-27 14:02:18.712  INFO 2620 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-04-27 14:02:18.780  INFO 2620 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.30.Final
+2023-04-27 14:02:18.939  INFO 2620 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-04-27 14:02:19.042  INFO 2620 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2023-04-27 14:02:19.802  INFO 2620 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-04-27 14:02:19.810  INFO 2620 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-04-27 14:02:20.125  WARN 2620 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-04-27 14:02:20.213 DEBUG 2620 --- [main] c.m.configuration.JwtRequestFilter       : Filter 'jwtRequestFilter' configured for use
+2023-04-27 14:02:20.440  INFO 2620 --- [main] c.m.service.CustomerService              : -----Adding roles into role database----
+2023-04-27 14:02:20.498  INFO 2620 --- [main] c.m.service.CustomerService              : Admin role has added..
+2023-04-27 14:02:20.501  INFO 2620 --- [main] c.m.service.CustomerService              : User role has added..
+2023-04-27 14:02:20.501  INFO 2620 --- [main] c.m.service.CustomerService              : Password has been encrypted....
+2023-04-27 14:02:20.629  INFO 2620 --- [main] c.m.service.CustomerService              : admin has been assigned Admin role.
+2023-04-27 14:02:20.887  INFO 2620 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@71b32407, org.springframework.security.web.context.SecurityContextPersistenceFilter@7a2fd94c, org.springframework.security.web.header.HeaderWriterFilter@1e033801, org.springframework.web.filter.CorsFilter@1d686622, org.springframework.security.web.authentication.logout.LogoutFilter@69f24965, com.moviebookingapp.configuration.JwtRequestFilter@4c8a9266, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@156eeff1, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@618e7761, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@400df2b3, org.springframework.security.web.session.SessionManagementFilter@1d2d793d, org.springframework.security.web.access.ExceptionTranslationFilter@2fc40856, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@4acdf6e7]
+2023-04-27 14:02:20.936  INFO 2620 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2023-04-27 14:02:21.068  INFO 2620 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-04-27 14:02:21.076  INFO 2620 --- [main] c.moviebookingapp.JwtYoutubeApplication  : Started JwtYoutubeApplication in 4.653 seconds (JVM running for 5.073)
