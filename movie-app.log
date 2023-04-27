@@ -1,0 +1,135 @@
+2023-04-28 00:01:00.388  INFO 2792 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2023-04-28 00:01:00.439  INFO 2792 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-04-28 00:01:00.503  INFO 2792 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-04-28 00:01:00.517  INFO 2792 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-04-28 00:01:15.990  INFO 15660 --- [main] c.moviebookingapp.JwtYoutubeApplication  : Starting JwtYoutubeApplication using Java 17.0.2 on LAPTOP-49GE95LS with PID 15660 (C:\Users\JIT\IdeaProjects\MovieApp\target\classes started by JIT in C:\Users\JIT\IdeaProjects\MovieApp)
+2023-04-28 00:01:15.995 DEBUG 15660 --- [main] c.moviebookingapp.JwtYoutubeApplication  : Running with Spring Boot v2.4.5, Spring v5.3.6
+2023-04-28 00:01:15.995  INFO 15660 --- [main] c.moviebookingapp.JwtYoutubeApplication  : No active profile set, falling back to default profiles: default
+2023-04-28 00:01:18.080  INFO 15660 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-04-28 00:01:18.170  INFO 15660 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 78 ms. Found 4 JPA repository interfaces.
+2023-04-28 00:01:18.628  INFO 15660 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@17d32e9b' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-04-28 00:01:18.634  INFO 15660 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-04-28 00:01:19.099  INFO 15660 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-04-28 00:01:19.123  INFO 15660 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-04-28 00:01:19.124  INFO 15660 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.45]
+2023-04-28 00:01:19.284  INFO 15660 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-04-28 00:01:19.286  INFO 15660 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3218 ms
+2023-04-28 00:01:19.358  INFO 15660 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-04-28 00:01:19.652  INFO 15660 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-04-28 00:01:19.663  INFO 15660 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:test'
+2023-04-28 00:01:19.859  INFO 15660 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-04-28 00:01:19.947  INFO 15660 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.30.Final
+2023-04-28 00:01:20.222  INFO 15660 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-04-28 00:01:20.425  INFO 15660 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2023-04-28 00:01:21.404  INFO 15660 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-04-28 00:01:21.414  INFO 15660 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-04-28 00:01:22.021  WARN 15660 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-04-28 00:01:22.133 DEBUG 15660 --- [main] c.m.configuration.JwtRequestFilter       : Filter 'jwtRequestFilter' configured for use
+2023-04-28 00:01:22.391  INFO 15660 --- [main] c.m.service.CustomerService              : -----Adding roles into role database----
+2023-04-28 00:01:22.476  INFO 15660 --- [main] c.m.service.CustomerService              : Admin role has added..
+2023-04-28 00:01:22.477  INFO 15660 --- [main] c.m.service.CustomerService              : User role has added..
+2023-04-28 00:01:22.477  INFO 15660 --- [main] c.m.service.CustomerService              : Password has been encrypted....
+2023-04-28 00:01:22.705  INFO 15660 --- [main] c.m.service.CustomerService              : admin has been assigned Admin role.
+2023-04-28 00:01:25.529  INFO 15660 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@225fb75e, org.springframework.security.web.context.SecurityContextPersistenceFilter@7983a5d5, org.springframework.security.web.header.HeaderWriterFilter@84e43fb, org.springframework.web.filter.CorsFilter@61d9dd15, org.springframework.security.web.authentication.logout.LogoutFilter@6778636f, com.moviebookingapp.configuration.JwtRequestFilter@5b80b41d, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@109188b4, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5e8e02a3, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4936fbc6, org.springframework.security.web.session.SessionManagementFilter@3182143c, org.springframework.security.web.access.ExceptionTranslationFilter@294a3f2a, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@397bd46b]
+2023-04-28 00:01:25.601  INFO 15660 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2023-04-28 00:01:25.920  INFO 15660 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-04-28 00:01:25.934  INFO 15660 --- [main] c.moviebookingapp.JwtYoutubeApplication  : Started JwtYoutubeApplication in 10.63 seconds (JVM running for 11.315)
+2023-04-28 00:01:39.426  INFO 15660 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-04-28 00:01:39.426  INFO 15660 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-04-28 00:01:39.427  INFO 15660 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-04-28 00:01:40.216  INFO 15660 --- [http-nio-8080-exec-1] o.springdoc.api.AbstractOpenApiResource  : Init duration for springdoc-openapi is: 722 ms
+2023-04-28 00:02:14.319  INFO 15660 --- [http-nio-8080-exec-6] c.m.controller.CustomerController        : Registering user...
+2023-04-28 00:02:14.322  INFO 15660 --- [http-nio-8080-exec-6] c.m.service.CustomerService              : saving customer with USER role into Customer database....
+2023-04-28 00:02:14.415  INFO 15660 --- [http-nio-8080-exec-6] c.m.service.CustomerService              : Password has been encrypted....
+2023-04-28 00:02:14.639  INFO 15660 --- [http-nio-8080-exec-6] c.m.service.CustomerService              : customer data saved into database successfully....
+2023-04-28 00:02:14.640  INFO 15660 --- [http-nio-8080-exec-6] c.m.service.CustomerService              : Exiting saveCustomer Method
+2023-04-28 00:03:01.866  INFO 15660 --- [http-nio-8080-exec-5] c.m.controller.CustomerController        : Logging in User
+2023-04-28 00:03:02.103  INFO 15660 --- [http-nio-8080-exec-5] com.moviebookingapp.service.JwtService   : user found with the useerName
+2023-04-28 00:03:02.109  INFO 15660 --- [http-nio-8080-exec-5] com.moviebookingapp.service.JwtService   : Autorities are checked
+2023-04-28 00:03:02.333  INFO 15660 --- [http-nio-8080-exec-5] com.moviebookingapp.service.JwtService   : user found with the useerName
+2023-04-28 00:03:02.333  INFO 15660 --- [http-nio-8080-exec-5] com.moviebookingapp.service.JwtService   : Autorities are checked
+2023-04-28 00:03:02.459  INFO 15660 --- [http-nio-8080-exec-5] com.moviebookingapp.service.JwtService   : Jwt Token created successfully!, User Logged Successfully
+2023-04-28 00:03:44.490  INFO 15660 --- [http-nio-8080-exec-8] com.moviebookingapp.service.JwtService   : user found with the useerName
+2023-04-28 00:03:44.490  INFO 15660 --- [http-nio-8080-exec-8] com.moviebookingapp.service.JwtService   : Autorities are checked
+2023-04-28 00:03:44.498  INFO 15660 --- [http-nio-8080-exec-8] c.m.service.CustomerService              : Entering showAllCustomer Method
+2023-04-28 00:03:44.516  INFO 15660 --- [http-nio-8080-exec-8] c.m.service.CustomerService              : Exiting showAllCustomer Method
+2023-04-28 00:19:18.060  INFO 15660 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2023-04-28 00:19:18.079  INFO 15660 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-04-28 00:19:18.112  INFO 15660 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-04-28 00:19:18.119  INFO 15660 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-04-28 00:19:29.146  INFO 22860 --- [main] c.moviebookingapp.JwtYoutubeApplication  : Starting JwtYoutubeApplication using Java 17.0.2 on LAPTOP-49GE95LS with PID 22860 (C:\Users\JIT\IdeaProjects\MovieApp\target\classes started by JIT in C:\Users\JIT\IdeaProjects\MovieApp)
+2023-04-28 00:19:29.150 DEBUG 22860 --- [main] c.moviebookingapp.JwtYoutubeApplication  : Running with Spring Boot v2.4.5, Spring v5.3.6
+2023-04-28 00:19:29.151  INFO 22860 --- [main] c.moviebookingapp.JwtYoutubeApplication  : No active profile set, falling back to default profiles: default
+2023-04-28 00:19:30.467  INFO 22860 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-04-28 00:19:30.556  INFO 22860 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 78 ms. Found 4 JPA repository interfaces.
+2023-04-28 00:19:30.983  INFO 22860 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@2e6f610d' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-04-28 00:19:30.988  INFO 22860 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-04-28 00:19:31.415  INFO 22860 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-04-28 00:19:31.434  INFO 22860 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-04-28 00:19:31.434  INFO 22860 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.45]
+2023-04-28 00:19:31.574  INFO 22860 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-04-28 00:19:31.574  INFO 22860 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2345 ms
+2023-04-28 00:19:31.639  INFO 22860 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-04-28 00:19:31.862  INFO 22860 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-04-28 00:19:31.869  INFO 22860 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:test'
+2023-04-28 00:19:32.030  INFO 22860 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-04-28 00:19:32.136  INFO 22860 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.30.Final
+2023-04-28 00:19:32.356  INFO 22860 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-04-28 00:19:32.516  INFO 22860 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2023-04-28 00:19:33.431  INFO 22860 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-04-28 00:19:33.445  INFO 22860 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-04-28 00:19:33.917  WARN 22860 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-04-28 00:19:34.020 DEBUG 22860 --- [main] c.m.configuration.JwtRequestFilter       : Filter 'jwtRequestFilter' configured for use
+2023-04-28 00:19:34.284  INFO 22860 --- [main] c.m.service.CustomerService              : -----Adding roles into role database----
+2023-04-28 00:19:34.362  INFO 22860 --- [main] c.m.service.CustomerService              : Admin role has added..
+2023-04-28 00:19:34.363  INFO 22860 --- [main] c.m.service.CustomerService              : User role has added..
+2023-04-28 00:19:34.363  INFO 22860 --- [main] c.m.service.CustomerService              : Password has been encrypted....
+2023-04-28 00:19:34.535  INFO 22860 --- [main] c.m.service.CustomerService              : admin has been assigned Admin role.
+2023-04-28 00:19:35.870  INFO 22860 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6892d403, org.springframework.security.web.context.SecurityContextPersistenceFilter@5e8e02a3, org.springframework.security.web.header.HeaderWriterFilter@7bbe852a, org.springframework.web.filter.CorsFilter@3fb42ec7, org.springframework.security.web.authentication.logout.LogoutFilter@6a26eee6, com.moviebookingapp.configuration.JwtRequestFilter@61503d00, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@66576bd2, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3c65f2e1, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1f7b1d6a, org.springframework.security.web.session.SessionManagementFilter@3f2a7ca0, org.springframework.security.web.access.ExceptionTranslationFilter@b666366, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@5ae67f05]
+2023-04-28 00:19:35.921  INFO 22860 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2023-04-28 00:19:36.191  INFO 22860 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-04-28 00:19:36.201  INFO 22860 --- [main] c.moviebookingapp.JwtYoutubeApplication  : Started JwtYoutubeApplication in 7.584 seconds (JVM running for 8.126)
+2023-04-28 00:19:46.232  INFO 22860 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-04-28 00:19:46.232  INFO 22860 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-04-28 00:19:46.234  INFO 22860 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2023-04-28 00:19:47.636  INFO 22860 --- [http-nio-8080-exec-7] o.springdoc.api.AbstractOpenApiResource  : Init duration for springdoc-openapi is: 661 ms
+2023-04-28 00:23:12.170  INFO 22860 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2023-04-28 00:23:12.176  INFO 22860 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-04-28 00:23:12.184  INFO 22860 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-04-28 00:23:12.188  INFO 22860 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-04-28 00:23:34.312  INFO 18140 --- [main] c.moviebookingapp.JwtYoutubeApplication  : Starting JwtYoutubeApplication using Java 17.0.2 on LAPTOP-49GE95LS with PID 18140 (C:\Users\JIT\IdeaProjects\MovieApp\target\classes started by JIT in C:\Users\JIT\IdeaProjects\MovieApp)
+2023-04-28 00:23:34.316 DEBUG 18140 --- [main] c.moviebookingapp.JwtYoutubeApplication  : Running with Spring Boot v2.4.5, Spring v5.3.6
+2023-04-28 00:23:34.317  INFO 18140 --- [main] c.moviebookingapp.JwtYoutubeApplication  : No active profile set, falling back to default profiles: default
+2023-04-28 00:23:35.594  INFO 18140 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-04-28 00:23:35.675  INFO 18140 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 72 ms. Found 4 JPA repository interfaces.
+2023-04-28 00:23:36.096  INFO 18140 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@7c251f90' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-04-28 00:23:36.105  INFO 18140 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-04-28 00:23:36.593  INFO 18140 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-04-28 00:23:36.621  INFO 18140 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-04-28 00:23:36.623  INFO 18140 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.45]
+2023-04-28 00:23:36.788  INFO 18140 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-04-28 00:23:36.790  INFO 18140 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2400 ms
+2023-04-28 00:23:36.878  INFO 18140 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-04-28 00:23:37.172  INFO 18140 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-04-28 00:23:37.182  INFO 18140 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:test'
+2023-04-28 00:23:37.387  INFO 18140 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-04-28 00:23:37.482  INFO 18140 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.30.Final
+2023-04-28 00:23:37.820  INFO 18140 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-04-28 00:23:37.990  INFO 18140 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2023-04-28 00:23:39.044  INFO 18140 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-04-28 00:23:39.053  INFO 18140 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-04-28 00:23:39.645  WARN 18140 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-04-28 00:23:39.766 DEBUG 18140 --- [main] c.m.configuration.JwtRequestFilter       : Filter 'jwtRequestFilter' configured for use
+2023-04-28 00:23:40.078  INFO 18140 --- [main] c.m.service.CustomerService              : -----Adding roles into role database----
+2023-04-28 00:23:40.239  INFO 18140 --- [main] c.m.service.CustomerService              : Admin role has added..
+2023-04-28 00:23:40.241  INFO 18140 --- [main] c.m.service.CustomerService              : User role has added..
+2023-04-28 00:23:40.241  INFO 18140 --- [main] c.m.service.CustomerService              : Password has been encrypted....
+2023-04-28 00:23:40.513  INFO 18140 --- [main] c.m.service.CustomerService              : admin has been assigned Admin role.
+2023-04-28 00:23:41.559  INFO 18140 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7611e295, org.springframework.security.web.context.SecurityContextPersistenceFilter@629cf53c, org.springframework.security.web.header.HeaderWriterFilter@5857d723, org.springframework.web.filter.CorsFilter@6d40a2b, org.springframework.security.web.authentication.logout.LogoutFilter@1dc2c13c, com.moviebookingapp.configuration.JwtRequestFilter@4229b92c, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3182143c, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7091a016, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@a7fd77f, org.springframework.security.web.session.SessionManagementFilter@1299c874, org.springframework.security.web.access.ExceptionTranslationFilter@7bb3294c, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@37b44e8e]
+2023-04-28 00:23:41.627  INFO 18140 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2023-04-28 00:23:41.914  INFO 18140 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-04-28 00:23:41.925  INFO 18140 --- [main] c.moviebookingapp.JwtYoutubeApplication  : Started JwtYoutubeApplication in 8.106 seconds (JVM running for 8.553)
+2023-04-28 00:24:22.424  INFO 18140 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-04-28 00:24:22.424  INFO 18140 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-04-28 00:24:22.426  INFO 18140 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2023-04-28 00:24:23.546  INFO 18140 --- [http-nio-8080-exec-7] o.springdoc.api.AbstractOpenApiResource  : Init duration for springdoc-openapi is: 668 ms
