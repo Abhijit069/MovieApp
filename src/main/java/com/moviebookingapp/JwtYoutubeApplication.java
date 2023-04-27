@@ -4,17 +4,11 @@ import com.moviebookingapp.entity.Movie;
 import com.moviebookingapp.entity.Tickets;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import io.swagger.v3.oas.annotations.OpenAPIDefinition;
-import io.swagger.v3.oas.annotations.enums.SecuritySchemeIn;
-import io.swagger.v3.oas.annotations.enums.SecuritySchemeType;
-import io.swagger.v3.oas.annotations.info.Info;
-import io.swagger.v3.oas.annotations.security.SecurityScheme;
 
 import java.time.LocalDate;
 import java.util.List;
 
 @SpringBootApplication
-
 public class JwtYoutubeApplication {
 
     public static void main(String[] args) {
