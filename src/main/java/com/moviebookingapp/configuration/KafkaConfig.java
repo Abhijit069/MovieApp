@@ -5,6 +5,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 import com.moviebookingapp.entity.Book;
+import com.moviebookingapp.entity.Movie;
 import org.apache.kafka.clients.consumer.ConsumerConfig;
 import org.apache.kafka.clients.producer.ProducerConfig;
 import org.apache.kafka.common.serialization.StringDeserializer;
@@ -28,14 +29,9 @@ public class KafkaConfig {
     @Bean
 
     // Method
-    public ProducerFactory<String, Book> producerFactory()
+    public ProducerFactory<String, Movie> producerFactory()
     {
-
-        // Creating a Map
-        Map<String, Object> config = new HashMap<>();
-
-        // Adding Configuration
-
+         Map<String, Object> config = new HashMap<>();
         // 127.0.0.1:9092 is the default port number for
         // kafka
         config.put(ProducerConfig.BOOTSTRAP_SERVERS_CONFIG,
@@ -50,18 +46,14 @@ public class KafkaConfig {
         return new DefaultKafkaProducerFactory<>(config);
     }
 
-    // Annotation
+
     @Bean
-
-    // Method
-    public KafkaTemplate kafkaTemplate()
-    {
-
+    public KafkaTemplate kafkaTemplate() {
         return new KafkaTemplate<>(producerFactory());
     }
 
     @Bean
-    public ConsumerFactory<String, Book> consumerFactory()
+    public ConsumerFactory<String, Movie> consumerFactory()
     {
 
         // Creating a map of string-object type
@@ -82,17 +74,16 @@ public class KafkaConfig {
         // Returning message in JSON format
         return new DefaultKafkaConsumerFactory<>(
                 config, new StringDeserializer(),
-                new JsonDeserializer<>(Book.class));
+                new JsonDeserializer<>(Movie.class));
     }
 
-    // Creating a Listener
     @Bean
     public ConcurrentKafkaListenerContainerFactory<String,
-            Book>
+            Movie>
     bookListener()
     {
         ConcurrentKafkaListenerContainerFactory<
-                String, Book> factory
+                String, Movie> factory
                 = new ConcurrentKafkaListenerContainerFactory<>();
         factory.setConsumerFactory(consumerFactory());
 

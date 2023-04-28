@@ -1,23 +1,18 @@
 package com.moviebookingapp.service;
 
-import com.moviebookingapp.dao.CustomerDao;
 import com.moviebookingapp.dao.MovieDao;
 import com.moviebookingapp.dao.TicketsDao;
-import com.moviebookingapp.entity.Customer;
 import com.moviebookingapp.entity.Movie;
 import com.moviebookingapp.entity.Tickets;
 import com.moviebookingapp.exception.CustomEcxeption;
-import com.moviebookingapp.exception.UsernameAlreadyExists;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.security.crypto.password.PasswordEncoder;
+import org.springframework.kafka.core.KafkaTemplate;
 import org.springframework.stereotype.Service;
 
 import javax.transaction.Transactional;
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
-import java.util.UUID;
-//import static com.moviebookingapp.service.MovieService;
+
+
 
 @Service
 @Transactional
@@ -26,6 +21,9 @@ public class TicketService {
 
     @Autowired
     private TicketsDao ticketsDao;
+
+    @Autowired
+    private KafkaTemplate<String, Movie> kafkaTemplate;
 
     @Autowired
     private MovieDao movieDao;
@@ -77,6 +75,7 @@ public class TicketService {
         return ifExist;
     }
 
+    private static final String TOPIC = "NewTopic";
     public Movie updateTickets(String moviename, int ticketNo) throws CustomEcxeption {
         if(checkMovieAvailibility(moviename) && ticketNo>0){
             Movie movie = movieDao.findByMoviename(moviename);
@@ -84,6 +83,8 @@ public class TicketService {
             ticket.setNumberofTickets(ticketNo);
             ticketsDao.save(ticket);
             movieDao.save(movie);
+            kafkaTemplate.send(TOPIC, movie);
+            //logger.info("Kafka poc working---"+movie.toString());
             return movie;
 
         }else{

@@ -3,6 +3,7 @@ package com.moviebookingapp.controller;
 // Java Program to Illustrate DemoController Class
 
 import com.moviebookingapp.entity.Book;
+import com.moviebookingapp.entity.Movie;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -18,18 +19,18 @@ import org.springframework.web.bind.annotation.RestController;
 public class DemoController {
 
     // Autowiring Kafka Template
-    @Autowired KafkaTemplate<String, Book> kafkaTemplate;
+    @Autowired KafkaTemplate<String, Movie> kafkaTemplate;
 
     private static final String TOPIC = "NewTopic";
 
     Logger logger = LoggerFactory.getLogger(DemoController.class);
     // Annotation
     @PostMapping("/publish")
-    public String publishMessage(@RequestBody Book book)
+    public String publishMessage(@RequestBody Movie movie)
     {
         // Sending the message
-        kafkaTemplate.send(TOPIC, book);
-        logger.info("Kafka poc working---"+book.toString());
+        kafkaTemplate.send(TOPIC, movie);
+        logger.info("Kafka poc working---"+movie.toString());
 
         return "Published Successfully";
     }
