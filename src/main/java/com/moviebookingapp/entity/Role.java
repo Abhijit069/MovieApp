@@ -1,11 +1,12 @@
 package com.moviebookingapp.entity;
 
+import org.springframework.data.mongodb.core.mapping.Document;
+
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
-@Entity
-//@Table(name = "ROLE")
+@Document(collection = "role")
 public class Role {
 
     @Id

@@ -16,7 +16,7 @@ public class RoleService {
         return roleDao.save(role);
     }
     
-    public Role adminRole() {
-        return roleDao.getAdmin();
-    }
+//    public Role adminRole() {
+//        return roleDao.getAdmin();
+//    }
 }

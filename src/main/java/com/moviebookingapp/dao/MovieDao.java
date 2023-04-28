@@ -5,12 +5,13 @@ import com.moviebookingapp.entity.Movie;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Modifying;
 import org.springframework.data.jpa.repository.Query;
+import org.springframework.data.mongodb.repository.MongoRepository;
 import org.springframework.stereotype.Repository;
 
 import java.util.List;
 
 @Repository
-public interface MovieDao extends JpaRepository<Movie, String> {
+public interface MovieDao extends MongoRepository<Movie, String> {
     Movie findByMoviename(String moviename);
 
     @Modifying

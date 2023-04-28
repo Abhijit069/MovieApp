@@ -4,17 +4,20 @@ import com.moviebookingapp.entity.Movie;
 import com.moviebookingapp.entity.Tickets;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration;
 
 import java.time.LocalDate;
 import java.util.List;
 
-@SpringBootApplication
+@SpringBootApplication(exclude = {DataSourceAutoConfiguration.class })
 public class JwtYoutubeApplication {
 
     public static void main(String[] args) {
         //System.out.println(movieTicket());
         SpringApplication.run(JwtYoutubeApplication.class, args);
     }
+
+
 
 //    public static String movieTicket(){
 //        Tickets t1 = new Tickets();

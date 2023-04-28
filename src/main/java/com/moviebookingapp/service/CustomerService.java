@@ -80,9 +80,11 @@ public class CustomerService {
             logger.error("mailId is already registered");
             throw new UsernameAlreadyExists("mailId is already registered");
         }
-        Role role = roleDao.findById("User").get();
+        Optional<Role> role = roleDao.findById("User");
         Set<Role> userRoles = new HashSet<>();
-        userRoles.add(role);
+        if(role.isPresent()){
+            userRoles.add(role.get());
+        }
         customer.setRole(userRoles);
         customer.setPassword(getEncodedPassword(customer.getPassword()));
         logger.info("customer data saved into database successfully....");
