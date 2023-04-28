@@ -80,12 +80,16 @@ public class CustomerService {
             logger.error("mailId is already registered");
             throw new UsernameAlreadyExists("mailId is already registered");
         }
-        Optional<Role> role = roleDao.findById("User");
+        Role role = roleDao.findByRoleName("User");
+        logger.info("User role is assigning to "+customer.toString());
         Set<Role> userRoles = new HashSet<>();
-        if(role.isPresent()){
-            userRoles.add(role.get());
-        }
+        userRoles.add(role);
+//        if(role.isPresent()){
+//            logger.info("Role found "+role.toString());
+//            userRoles.add(role.get());
+//        }
         customer.setRole(userRoles);
+        logger.info("User role is assigned to "+customer.toString());
         customer.setPassword(getEncodedPassword(customer.getPassword()));
         logger.info("customer data saved into database successfully....");
         logger.info("Exiting saveCustomer Method");

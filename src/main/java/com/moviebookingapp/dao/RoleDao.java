@@ -11,4 +11,6 @@ public interface RoleDao extends MongoRepository<Role, String> {
 
 	//@Query("from Role where roleName='Admin'")
 //	Role getAdmin();
+
+    Role findByRoleName(String role);
 }
