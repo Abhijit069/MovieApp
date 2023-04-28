@@ -1,20 +1,15 @@
 package com.moviebookingapp;
 
-import com.moviebookingapp.entity.Movie;
-import com.moviebookingapp.entity.Tickets;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration;
 
-import java.time.LocalDate;
-import java.util.List;
-
 @SpringBootApplication(exclude = {DataSourceAutoConfiguration.class })
-public class JwtYoutubeApplication {
+public class MovieBookingApplication {
 
     public static void main(String[] args) {
         //System.out.println(movieTicket());
-        SpringApplication.run(JwtYoutubeApplication.class, args);
+        SpringApplication.run(MovieBookingApplication.class, args);
     }
 
 
